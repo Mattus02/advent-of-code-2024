@@ -1,11 +1,7 @@
-
-# FREE = -1
-
 expanded = []
 
-with open("input2.txt") as file:
+with open("input.txt") as file:
     input = file.readline()
-    print(input)
     id = 0
     for i in range(len(input)):
         repeat = int(input[i])
@@ -13,11 +9,9 @@ with open("input2.txt") as file:
             expanded.extend([id] * repeat)
             id += 1
         else:
-            # expanded.extend([FREE] * repeat)
             expanded.extend(['.'] * repeat)
 
 print(expanded)
-
 
 start = expanded.index('.')
 end = len(expanded) - 1
