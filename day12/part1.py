@@ -1,8 +1,6 @@
-
-
 grid = []
 
-with open("input2.txt") as file:
+with open("input.txt") as file:
     for line in file:
         grid.append([])
         for ch in line:
